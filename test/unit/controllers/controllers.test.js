@@ -5,7 +5,7 @@ const mockUserList = require('./../mock/userList.json');
 jest.mock('mongoose');
 let database;
 
-const SRV = '';
+const SRV = process.env.MONGO_SRV;
 
 describe('Suite de testes unitários do controller', () => {
     beforeAll(() => {
